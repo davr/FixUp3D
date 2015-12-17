@@ -223,6 +223,7 @@ LRESULT PrinterSettings::handleWndMessage(HWND hWnd, UINT message, WPARAM wParam
 					UP_PRINT_SET_STRUCT* printSet = &settings.customPrintSets[iPrintSetIndex];
 					if (printSet != NULL) {
 						updatePrintSet(iPrintSetIndex, printSet);
+						MessageBox(NULL, "WorkAround Windows8 Crash", "FixUp3D", NULL);
 					}
 					break;
 				}
